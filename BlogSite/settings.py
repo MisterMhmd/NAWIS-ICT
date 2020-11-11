@@ -1,6 +1,6 @@
 import os
 import django_heroku
-import dj_database_url
+import dj_database_urcl
 from decouple import config 
 from pathlib import Path
 
@@ -116,7 +116,7 @@ django_heroku.settings(locals())
 
 import os
 import django_heroku
-import dj_databse_url
+import dj_database_url
 from decouple import config 
 from pathlib import Path
 
