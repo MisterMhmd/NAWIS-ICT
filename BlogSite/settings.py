@@ -5,7 +5,7 @@ from decouple import config
 from pathlib import Path
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 SECRET_KEY = 'u=zor2+qhw=dw=^fmb52wv31b%7ql*-5^jgv+i=tv=x=jp()b!'
