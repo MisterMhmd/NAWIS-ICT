@@ -7,8 +7,6 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
-
 
 SECRET_KEY = 'u=zor2+qhw=dw=^fmb52wv31b%7ql*-5^jgv+i=tv=x=jp()b!'
 
@@ -56,6 +54,11 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_DIRS = {
+    os.path.join(SETTINGS_PATH, 'templates'),
+}
+
 
 WSGI_APPLICATION = 'BlogSite.wsgi.application'
 
@@ -125,8 +128,6 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
-
 
 SECRET_KEY = 'u=zor2+qhw=dw=^fmb52wv31b%7ql*-5^jgv+i=tv=x=jp()b!'
 
@@ -174,6 +175,11 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_DIRS = {
+    os.path.join(SETTINGS_PATH, 'templates'),
+}
+
 
 WSGI_APPLICATION = 'BlogSite.wsgi.application'
 
