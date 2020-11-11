@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
 
-def web(request):
+def home(request):
 	return render(request, 'index.html', {})
 
