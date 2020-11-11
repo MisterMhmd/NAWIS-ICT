@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'MyBlog',
+    'BlogSite',
 ]
 
 MIDDLEWARE = [
@@ -54,11 +54,6 @@ TEMPLATES = [
         },
     },
 ]
-
-TEMPLATE_DIRS = {
-    os.path.join(SETTINGS_PATH, 'templates'),
-}
-
 
 WSGI_APPLICATION = 'BlogSite.wsgi.application'
 
@@ -144,7 +139,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'MyBlog',
+    'BlogSite',
 ]
 
 MIDDLEWARE = [
@@ -175,11 +170,6 @@ TEMPLATES = [
         },
     },
 ]
-
-TEMPLATE_DIRS = {
-    os.path.join(SETTINGS_PATH, 'templates'),
-}
-
 
 WSGI_APPLICATION = 'BlogSite.wsgi.application'
 
