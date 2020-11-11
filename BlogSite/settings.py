@@ -5,7 +5,7 @@ from decouple import config
 from pathlib import Path
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 SECRET_KEY = 'u=zor2+qhw=dw=^fmb52wv31b%7ql*-5^jgv+i=tv=x=jp()b!'
@@ -42,7 +42,7 @@ ROOT_URLCONF = 'BlogSite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
